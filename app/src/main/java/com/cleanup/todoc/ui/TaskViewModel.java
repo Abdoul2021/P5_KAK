@@ -43,12 +43,6 @@ public class TaskViewModel extends ViewModel {
         this.executor = executor;
     }
 
-   /* public void init(long projectId) {
-        if (this.currentProject != null) {
-            return;
-        }
-        currentProject = projectDataSource.getProject(projectId);
-    }*/
 
     // -------------
     // FOR PROJECT
@@ -79,12 +73,6 @@ public class TaskViewModel extends ViewModel {
             taskDataSource.deleteTask(taskId);
         });
     }
-
-    /*public void updateTask(Task task) {
-        executor.execute(() -> {
-            taskDataSource.updateTask(task);
-        });
-    }*/
 
     //Return the list of projects
     public List<Project> getAllProjects(){ return projectsList; }
